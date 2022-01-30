@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html, body{
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* margin */
+    align-items: center; /* padding */
+}
+
+.card{
+    background: aquamarine;
+    height: 50vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem;
+    margin: 0 2%;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card h1{
+    font-size: 1.5rem;
+}
+
+.card p{
+    font-size: 0.7rem;
+
+}
+
+.card h1, p{
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 1121px){
+    body{
+        background: rgb(124, 246, 255);
+        overflow:scroll;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .card{
+        justify-content:space-around;
+        height: 30vh;
+        width: 20vw;
+        padding: 0 3%;
+        margin: 5% 0;
+    }
+
+    .card h1{
+        font-size: 0.6rem;
+    }
+
+    .card p{
+        font-size: 0.3rem;
+    }
+}
+
+/* 
+@media all and (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .card{
+        margin: 2% 0;
+    }
+
+    body{
+        background: black;
+    }
+} */
+
+/* default os all selector and the landscape is when width > height */
+@media (orientation: landscape){
+
+}
+
+/* default os all selector and the portrait is when height > width*/
+@media (orientation: portrait){
+
+}
+
+/* default os all selector and the portrait is when height > width*/
+@media (orientation: portrait) and (max-width: 700px){
+
+} 
+
+
+/* 
+using scss create variables
+Styling breakpoints:
+
+$desktop: 1200px; col-xl
+$laptop: 1024px; col-lg
+$tablet: 768px; md
+$phone: 480px; s 
+
+*/
+
